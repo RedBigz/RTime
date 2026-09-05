@@ -27,9 +27,9 @@ namespace Pinetime {
         lv_obj_t* btnSetTime;
         lv_obj_t* lblSetTime;
 
-        Widgets::Counter dayCounter = Widgets::Counter(1, 31, jetbrains_mono_bold_20);
-        Widgets::Counter monthCounter = Widgets::Counter(1, 12, jetbrains_mono_bold_20);
-        Widgets::Counter yearCounter = Widgets::Counter(1970, 9999, jetbrains_mono_bold_20);
+        Widgets::Counter dayCounter = Widgets::Counter(1, 31, ibm_plex_mono_bold_20);
+        Widgets::Counter monthCounter = Widgets::Counter(1, 12, ibm_plex_mono_bold_20);
+        Widgets::Counter yearCounter = Widgets::Counter(1970, 9999, ibm_plex_mono_bold_20);
       };
     }
   }

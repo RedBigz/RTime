@@ -50,8 +50,8 @@ Tile::Tile(uint8_t screenID,
   pageIndicator.Create();
 
   uint8_t btIndex = 0;
-  for (uint8_t i = 0; i < 6; i++) {
-    if (i == 3) {
+  for (uint8_t i = 0; i < applications.size(); i++) {
+    if (i == applications.size() / 2) {
       btnmMap[btIndex++] = "\n";
     }
     if (applications[i].application == Apps::None) {
@@ -76,7 +76,7 @@ Tile::Tile(uint8_t screenID,
   lv_obj_set_style_local_pad_all(btnm1, LV_BTNMATRIX_PART_BG, LV_STATE_DEFAULT, 0);
   lv_obj_set_style_local_pad_inner(btnm1, LV_BTNMATRIX_PART_BG, LV_STATE_DEFAULT, 10);
 
-  for (uint8_t i = 0; i < 6; i++) {
+  for (uint8_t i = 0; i < applications.size(); i++) {
     lv_btnmatrix_set_btn_ctrl(btnm1, i, LV_BTNMATRIX_CTRL_CLICK_TRIG);
     if (applications[i].application == Apps::None || !applications[i].enabled) {
       lv_btnmatrix_set_btn_ctrl(btnm1, i, LV_BTNMATRIX_CTRL_DISABLED);

@@ -218,10 +218,10 @@ static void basic_init() {
 lv_theme_t* lv_pinetime_theme_init() {
   theme.color_primary = LV_COLOR_WHITE;
   theme.color_secondary = LV_COLOR_GRAY;
-  theme.font_small = &jetbrains_mono_bold_20;
-  theme.font_normal = &jetbrains_mono_bold_20;
-  theme.font_subtitle = &jetbrains_mono_bold_20;
-  theme.font_title = &jetbrains_mono_bold_20;
+  theme.font_small = &ibm_plex_mono_bold_20;
+  theme.font_normal = &ibm_plex_mono_bold_20;
+  theme.font_subtitle = &ibm_plex_mono_bold_20;
+  theme.font_title = &ibm_plex_mono_bold_20;
   theme.flags = 0;
 
   basic_init();

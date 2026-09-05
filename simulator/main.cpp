@@ -1150,8 +1150,8 @@ static void hal_init(void) {
 
   // use pinetime_theme
   // lv_theme_t* th = lv_pinetime_theme_init(
-  //  LV_COLOR_WHITE, LV_COLOR_SILVER, 0, &jetbrains_mono_bold_20, &jetbrains_mono_bold_20, &jetbrains_mono_bold_20,
-  //  &jetbrains_mono_bold_20);
+  //  LV_COLOR_WHITE, LV_COLOR_SILVER, 0, &ibm_plex_mono_bold_20, &ibm_plex_mono_bold_20, &ibm_plex_mono_bold_20,
+  //  &ibm_plex_mono_bold_20);
   // lv_theme_set_act(th);
 
   ///*Create a display buffer*/
