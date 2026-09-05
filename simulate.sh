@@ -1,5 +1,5 @@
 (
     cd simulator/build
-    make
+    cmake --build . -j6
     ./infinisim
 )
