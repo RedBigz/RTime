@@ -1,0 +1,12 @@
+sim/timers.h
+sim/task.cpp
+sim/task.h
+sim/projdefs.h
+sim/portmacro_cmsis.h
+sim/FreeRTOS.h
+sim/nrfx/**
+sim/libraries/**
+sim/host/**
+external/**
+InfiniTime/**
+lv_drivers/**

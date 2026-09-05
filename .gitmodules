@@ -7,3 +7,6 @@
 [submodule "src/libs/arduinoFFT"]
 	path = src/libs/arduinoFFT
 	url = https://github.com/kosme/arduinoFFT.git
+[submodule "simulator/lv_drivers"]
+	path = simulator/lv_drivers
+	url = https://github.com/lvgl/lv_drivers
