@@ -92,7 +92,7 @@ namespace Pinetime {
           } else if (celsius <= 4) { // ice
             return LV_COLOR_CYAN;
           } else if (celsius >= 27) { // hot
-            return Colors::deepOrange;
+            return Colors::red;
           }
           return Colors::orange; // normal
         }

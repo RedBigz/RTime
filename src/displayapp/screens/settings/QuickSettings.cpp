@@ -4,6 +4,7 @@
 #include "displayapp/screens/BatteryIcon.h"
 #include "components/ble/BleController.h"
 #include "displayapp/InfiniTimeTheme.h"
+#include "displayapp/CustomStyles.h"
 
 using namespace Pinetime::Applications::Screens;
 
@@ -89,9 +90,9 @@ QuickSettings::QuickSettings(Pinetime::Applications::DisplayApp* app,
   btn3->user_data = this;
   lv_obj_set_event_cb(btn3, ButtonEventHandler);
   lv_obj_add_style(btn3, LV_BTN_PART_MAIN, &btn_style);
-  lv_obj_set_style_local_bg_color(btn3, LV_BTN_PART_MAIN, static_cast<lv_state_t>(ButtonState::NotificationsOff), LV_COLOR_RED);
-  static constexpr lv_color_t violet = LV_COLOR_MAKE(0x60, 0x00, 0xff);
-  lv_obj_set_style_local_bg_color(btn3, LV_BTN_PART_MAIN, static_cast<lv_state_t>(ButtonState::Sleep), violet);
+  lv_obj_set_style_local_bg_color(btn3, LV_BTN_PART_MAIN, static_cast<lv_state_t>(ButtonState::NotificationsOff), Colors::red);
+  // static constexpr lv_color_t violet = LV_COLOR_MAKE(0x60, 0x00, 0xff);
+  lv_obj_set_style_local_bg_color(btn3, LV_BTN_PART_MAIN, static_cast<lv_state_t>(ButtonState::Sleep), Colors::lavender);
   lv_obj_set_size(btn3, buttonWidth, buttonHeight);
   lv_obj_align(btn3, nullptr, LV_ALIGN_IN_BOTTOM_LEFT, buttonXOffset, 0);
 
