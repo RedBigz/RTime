@@ -4,7 +4,6 @@
 #include "displayapp/screens/BatteryIcon.h"
 #include "components/ble/BleController.h"
 #include "displayapp/InfiniTimeTheme.h"
-#include "displayapp/CustomStyles.h"
 
 using namespace Pinetime::Applications::Screens;
 
